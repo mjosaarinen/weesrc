@@ -408,6 +408,12 @@ size_t wee_file_dec(FILE *fin, FILE *fout, int verb)
                         pof[0] = rof;
                     }
                 }
+                
+                if (rof > dop) {		// check for overflow
+                	fprintf(stderr, "Illegal offset.\n");
+                	exit(0);
+                }
+                
                 for (i = 0; i < rle; i++) { // well, copy it !
                     dou[dop + i] = dou[dop + i - rof];
                 }
