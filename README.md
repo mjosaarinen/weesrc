@@ -16,7 +16,6 @@ I hear the word quite a lot here in Belfast where I live.
 
 This is work in progress -- I hope to tune various parameters and encodings 
 to beat other state of the art compression tools. 
-
 **EXPERIMENTAL CODE, ABSOLUTELY NO WARRANTY WHATSOEVER**
 
 # Usage
