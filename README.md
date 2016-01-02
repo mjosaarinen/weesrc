@@ -8,9 +8,10 @@ Source code for the experimental, compact **wee** file compression utility.
 Experimental file compression is based on binary arithmetic coding (BAC),
 bigram byte Markov model, and block sorting dictionary search.
 Despite these fairly advanced techniques, the codebase is still well under 1000
-lines and the speed is not too bad. This is work in progress -- I hope
-to tune various parameters against the compression corpora to get overall
-better performance.
+lines and the speed is not too bad. 
+
+This is work in progress -- I hope to tune various parameters and encodings 
+to beat other state of the art compression tools. 
 
 The adjective (and my file extension) "wee" means *small*, see
 [Wiktionary](https://en.wiktionary.org/wiki/wee#Adjective).
