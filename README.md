@@ -46,35 +46,35 @@ This first alpha release outperforms *gzip*, but falls little short of the
 performance of *xz* (LZMA method) and *bzip2* (block-sorting method).
 Just run `make test` to perform full comparison.
 
-Here are the outputs for *gzip*:
+Here is the output for *gzip*:
 ```
-gzip	       54435  64.2%  alice29.txt
-gzip	       48951  60.8%  asyoulik.txt
-gzip	        7999  67.4%  cp.html
-gzip	        3143  71.8%  fields.c
-gzip	        1246  66.5%  grammar.lsp
-gzip	      206779  79.9%  kennedy.xls
-gzip	      144885  66.0%  lcet10.txt
-gzip	      195208  59.4%  plrabn12.txt
-gzip	       56443  89.0%  ptt5
-gzip	       12924  66.2%  sum
-gzip	        1756  58.4%  xargs.1
-gzip	============  68.1%  AVERAGE
+gzip           54435  64.2%  alice29.txt
+gzip           48951  60.8%  asyoulik.txt
+gzip            7999  67.4%  cp.html
+gzip            3143  71.8%  fields.c
+gzip            1246  66.5%  grammar.lsp
+gzip          206779  79.9%  kennedy.xls
+gzip          144885  66.0%  lcet10.txt
+gzip          195208  59.4%  plrabn12.txt
+gzip           56443  89.0%  ptt5
+gzip           12924  66.2%  sum
+gzip            1756  58.4%  xargs.1
+gzip    ============  68.1%  AVERAGE
 ```
 
 And current version of *wee*:
 ```
-wee	       53362  64.9%  alice29.txt
-wee	       48578  61.1%  asyoulik.txt
-wee	        7953  67.6%  cp.html
-wee	        3212  71.1%  fields.c
-wee	        1284  65.4%  grammar.lsp
-wee	       67070  93.4%  kennedy.xls
-wee	      134914  68.3%  lcet10.txt
-wee	      186588  61.2%  plrabn12.txt
-wee	       54147  89.4%  ptt5
-wee	       12800  66.5%  sum
-wee	        1798  57.4%  xargs.1
-wee	============  69.6%  AVERAGE
+wee 	       53362  64.9%  alice29.txt
+wee     	   48578  61.1%  asyoulik.txt
+wee 	        7953  67.6%  cp.html
+wee 	        3212  71.1%  fields.c
+wee 	        1284  65.4%  grammar.lsp
+wee     	   67070  93.4%  kennedy.xls
+wee 	      134914  68.3%  lcet10.txt
+wee     	  186588  61.2%  plrabn12.txt
+wee 	       54147  89.4%  ptt5
+wee     	   12800  66.5%  sum
+wee 	        1798  57.4%  xargs.1
+wee		============  69.6%  AVERAGE
 ```
 
