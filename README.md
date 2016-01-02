@@ -9,7 +9,7 @@ Experimental file compression is based on binary arithmetic coding (BAC),
 bigram byte Markov model, and block sorting dictionary search.
 Codebase still under 1000 lines.
 
-Wee means small, see 
+The adjective "wee" means *small*, see 
 [Wiktionary](https://en.wiktionary.org/wiki/wee#Adjective).
 I hear the word quite a lot here in Belfast where I live.
 
