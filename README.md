@@ -5,12 +5,12 @@ Source code for the experimental, compact **wee** file compression utility.
 
 02-Jan-16  Markku-Juhani O. Saarinen  <mjos@iki.fi>
 
-Experimental file compression is based on binary arithmetic coding (BAC), 
+Experimental file compression is based on binary arithmetic coding (BAC),
 bigram byte Markov model, and block sorting dictionary search.
-Despite these fairly advanced techniques, the codebase is still under 1000 
+Despite these fairly advanced techniques, the codebase is still under 1000
 lines and speed is not too bad. This is work in progress.
 
-The adjective "wee" means *small*, see 
+The adjective (and my file extension) "wee" means *small*, see
 [Wiktionary](https://en.wiktionary.org/wiki/wee#Adjective).
 I hear the word quite a lot here in Belfast where I live.
 
@@ -20,7 +20,7 @@ I hear the word quite a lot here in Belfast where I live.
 # Usage
 
 A standard `Makefile` is included, which should be workable on most
-modern Linux-like boxes. 
+modern Linux-like boxes.
 
 Command line usage is pretty much standard:
 ```
@@ -35,12 +35,12 @@ Compress or uncompress FILEs. OPTIONs:
 
 wee v0.1 by Markku-Juhani O. Saarinen <mjos@iki.fi>  Feedback welcome.
 ```
-You can symlink `unwee` and `weecat` to the 
+You can symlink `unwee` and `weecat` to the
 `wee` binary to get corresponding functionality without flags.
 
 # Performance
 
-A test suite based on the 
+A test suite based on the
 [Cantenbury Compression Corpus](http://corpus.canterbury.ac.nz/) is included.
 This first alpha release outperforms *gzip*, but falls little short of the
 performance of *xz* (LZMA method) and *bzip2* (block-sorting method).
