@@ -11,7 +11,7 @@ nofil=${#orfil[*]}
 TIMEFORMAT=$'%3Rs real / %3Us user / %3Ss sys'
 
 # loop over tools 
-for zz in gzip bzip2 xz ../wee
+for zz in ../wee gzip bzip2 xz
 do
 	# compress the corpus
 	zd=`basename $zz`
@@ -27,7 +27,7 @@ do
 
 	echo -n $zd$'\t  Decompress: '
 	time $zz -d $zd/*
-		
+
 	for f in $(ls $corpus)
 	do
 		if ! cmp $corpus/$f $zd/$f >> /dev/null
@@ -35,7 +35,7 @@ do
 		fi
 	done
 	rm -rf $zd
-	
+
 	(( av = 0 ))
 	for ((i = 0; i < nofil; i++))
 	do
@@ -47,10 +47,10 @@ do
 	done
 	(( pp = av / nofil ))
 	(( pc = pp / 10 ))
-	(( pf = pp % 10 ))	 
+	(( pf = pp % 10 ))
 	echo $zd$'\t============ ' $pc.$pf% " AVERAGE"
 
 	echo
-	
+
 done
 
