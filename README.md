@@ -3,22 +3,23 @@ weesrc
 
 Source code for the experimental, compact **wee** file compression utility.
 
-02-Jan-16  Markku-Juhani O. Saarinen <mjos@iki.fi>
+02-Jan-16  Markku-Juhani O. Saarinen  <mjos@iki.fi>
 
 Experimental file compression is based on binary arithmetic coding (BAC), 
 bigram byte Markov model, and block sorting dictionary search.
 Codebase still under 1000 lines.
 
 Wee means small, see 
-[wiktionary]((https://en.wiktionary.org/wiki/wee#Adjective).
+[Wiktionary](https://en.wiktionary.org/wiki/wee#Adjective).
 I hear the word quite a lot here in Belfast where I live.
 
-** WORK IN PROGRESS, ABSOLUTELY NO WARRANTY WHATSOEVER **
+
+**WORK IN PROGRESS, ABSOLUTELY NO WARRANTY WHATSOEVER**
 
 # Usage
 
 A standard `Makefile` is included, which should be workable on most
-modern Linux-like boxes.
+modern Linux-like boxes. 
 
 Command line usage is pretty much standard:
 ```
@@ -33,14 +34,15 @@ Compress or uncompress FILEs. OPTIONs:
 
 wee v0.1 by Markku-Juhani O. Saarinen <mjos@iki.fi>  Feedback welcome.
 ```
+You can symlink `unwee` and `weecat` to the 
+`wee` binary to get corresponding functionality without flags.
 
 # Performance
 
 A test suite based on the 
-[Cantenbury compression corpus](http://corpus.canterbury.ac.nz/) is included.
+[Cantenbury Compression Corpus](http://corpus.canterbury.ac.nz/) is included.
 This first alpha release outperforms *gzip*, but falls little short of the
 performance of *xz* (LZMA method) and *bzip2* (block-sorting method).
-
 Just run `make test` to perform full comparison.
 
 Here are the outputs for *gzip*:
