@@ -1,8 +1,6 @@
 #/bin/bash
 # Comparison for of gzip-like compressors
 
-# original lengths and checksum
-
 corpus=cantenbury
 orlen=( $(stat -c %s $corpus/*) )
 orfil=( $( ls $corpus ) )
