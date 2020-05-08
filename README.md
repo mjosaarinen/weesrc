@@ -8,14 +8,10 @@ Source code for the experimental, compact **wee** file compression utility.
 Experimental file compression is based on binary arithmetic coding (BAC),
 bigram byte Markov model, and block sorting dictionary search.
 Despite these fairly advanced techniques, the codebase is still well under 1000
-lines and the speed is not too bad. 
+lines and the speed is not too bad.
 
-The adjective (and my file extension) "wee" means *small*, see
-[Wiktionary](https://en.wiktionary.org/wiki/wee#Adjective).
-I hear the word quite a lot here in Belfast where I live.
-
-This is work in progress -- I hope to tune various parameters and encodings 
-to beat other state of the art compression tools. 
+This is work in progress -- I hope to tune various parameters and encodings
+to beat other state of the art compression tools.
 **EXPERIMENTAL CODE, ABSOLUTELY NO WARRANTY WHATSOEVER**
 
 # Usage
@@ -65,17 +61,17 @@ gzip    ============  68.1%  AVERAGE
 
 And current version of *wee*:
 ```
-wee 	       53362  64.9%  alice29.txt
-wee     	   48578  61.1%  asyoulik.txt
-wee 	        7953  67.6%  cp.html
-wee 	        3212  71.1%  fields.c
-wee 	        1284  65.4%  grammar.lsp
-wee     	   67070  93.4%  kennedy.xls
-wee 	      134914  68.3%  lcet10.txt
-wee     	  186588  61.2%  plrabn12.txt
-wee 	       54147  89.4%  ptt5
-wee     	   12800  66.5%  sum
-wee 	        1798  57.4%  xargs.1
-wee		============  69.6%  AVERAGE
+wee            53362  64.9%  alice29.txt
+wee            48578  61.1%  asyoulik.txt
+wee             7953  67.6%  cp.html
+wee             3212  71.1%  fields.c
+wee             1284  65.4%  grammar.lsp
+wee            67070  93.4%  kennedy.xls
+wee           134914  68.3%  lcet10.txt
+wee           186588  61.2%  plrabn12.txt
+wee            54147  89.4%  ptt5
+wee            12800  66.5%  sum
+wee             1798  57.4%  xargs.1
+wee     ============  69.6%  AVERAGE
 ```
 
